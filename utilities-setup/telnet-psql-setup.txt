@@ -1,0 +1,12 @@
+1. SSH into "ssh-port-forwarding-bastion-server" as ec2-user
+
+2. Update Linux Repo
+   sudo yum update -y
+
+3. Install telnet and psql utilities
+   sudo yum install -y telnet postgresql96.x86_64
+
+4. Test the connectivity to Redshift cluster that has been created. 
+   psql --host=<end-point> --port=5439 --dbname=mydb --user=administrator
+
+5. exit
